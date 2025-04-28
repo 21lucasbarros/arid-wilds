@@ -1,5 +1,6 @@
 package com.lucasbarros.aridwilds;
 
+import com.lucasbarros.aridwilds.block.ModBlocks;
 import com.lucasbarros.aridwilds.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,5 +15,6 @@ public class AridWilds implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Initializing mod: " + MOD_ID);
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
